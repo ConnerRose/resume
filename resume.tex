@@ -43,6 +43,12 @@
   }
 }
 
+\newcommand{\resumeSingleItem}[1]{
+  \item\small{
+    #1\vspace{-2pt}
+  }
+}
+
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -50,6 +56,12 @@
       \textit{\small#3} & \textit{\small #4} \\
       % \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[1]{
+  \vspace{-3pt}\item
+  % {0.97\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{#1}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
@@ -81,7 +93,7 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Michigan, College of Engineering}{Ann Arbor, MI}
-      {B.S.E. in Computer Science; Minor: Mathematics}{Aug. 2022 -- Present}
+      {B.S.E. in Computer Science; Minor in Mathematics}{Aug. 2022 -- May 2025 (Expected)}
       \resumeItemListStart
         \resumeItem{Relevant Coursework \normalfont{(AP Credit)}}{Calculus I; Calculus II; Intro Programming (AP Computer Science A)}
           % \resumeItemListStart
@@ -100,7 +112,7 @@
     
     \resumeSubheading
       {Michigan State University}{East Lansing, MI}
-      {Dual Enrollment in Mathematics;  GPA: 4.0}{Jan. 2021 -- May. 2022}
+      {Dual Enrollment in Mathematics;  GPA: 4.0}{Jan. 2021 -- May 2022}
       \resumeItemListStart
         \resumeItem{Relevant Coursework}
           {}
@@ -135,57 +147,71 @@
       {Jackson}{Lansing, MI}
       {Strategic Support Associate}{Summer 2022}
       \resumeItemListStart
-        \resumeItem{Data Management}
-          {\{put stuff here\}}
-        \resumeItem{Risk Management}
-          {\{put stuff here\}}
+        \resumeItem{Risk Mitigation}
+          {Processed transactions while adhering to documented policies and procedures}
+        \resumeItem{Skill Development}
+          {Leveraged training, subject matter experts and other resources to quickly acquire knowledge and proficiency in company specific applications and systems}
+        \resumeItem{Problem Solving}
+          {Enhanced problem solving skills through collaboration with other associates in identifying solutions; escalate to management as necessary}
+        \resumeItem{Privacy Policies}
+          {Adhered to strict confidentiality policies to help create a trusting relationship with clients}
       \resumeItemListEnd
 
-    \resumeSubheading
-      {City of East Lansing}{East Lansing, MI}
-      {Lifeguad/Swim Instructor}{Summer 2021}
-      \resumeItemListStart
-        \item{Improved sense of responsibility and appreciation for doing things by the book}\vspace{-4pt}
-        \item{Ensured safety of all pool-goers}\vspace{-2pt}
-      \resumeItemListEnd
+    % \resumeSubheading
+    %   {City of East Lansing}{East Lansing, MI}
+    %   {Lifeguad/Swim Instructor}{Summer 2021}
+    %   \resumeItemListStart
+    %     \resumeSingleItem{Improved sense of responsibility and appreciation for doing things by the book}
+    %     \resumeSingleItem{Ensured safety of all pool-goers}
+    %   \resumeItemListEnd
 
-    \resumeSubheading
-      {Greater Lansing Area Soccer Referee Association}{Lansing, MI}
-      {Youth Soccer Referee}{2017 -- 2021}
-      \resumeItemListStart
-        \item{Developed personal accountability skills}\vspace{-4pt}
-        \item{Learned methods of effective, on-the-fly communication and conflict resolution}\vspace{-4pt}
-        \item{Provided a service to the local community}\vspace{-2pt}
-      \resumeItemListEnd
+    % \resumeSubheading
+    %   {Greater Lansing Area Soccer Referee Association}{Lansing, MI}
+    %   {Youth Soccer Referee}{2017 -- 2021}
+    %   \resumeItemListStart
+    %     \resumeSingleItem{Developed personal accountability skills}
+    %     \resumeSingleItem{Learned methods of effective, on-the-fly communication and conflict resolution}
+    %     \resumeSingleItem{Provided a service to the local community}
+    %   \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeItemListStart
-    \item{\textbf{Cypher CLI} \normalfont{(C++)}}\vspace{-5pt}
+
+    \vspace{2pt}\resumeProjectHeading{Swim Lineup Generator/Meet Projector}
     \resumeItemListStart
-      \item {Encryption and Decryption algorithms for Caesar, Polybius, and Vigenère ciphers}\vspace{-4pt}
+      \resumeSingleItem{Created a tool in \textbf{Python} to generate optimal meet linups based on best times}
+      \resumeSingleItem{Uses \textbf{Beautiful Soup} to scrape data from an online meet result database}
+      \resumeSingleItem{Uses previous meet results to generate linups for dual meets between two selected teams and an optimal lineup for every team in a league championship}
+      \resumeSingleItem{As a former swim team captain during high school, I have a personal connection to this task}
+      \resumeSingleItem{This is a programmatic implementation of what me and my coaches spent hours pondering during the season}
     \resumeItemListEnd
 
-    \item{\textbf{Image Manipulation} \normalfont{(Java)}}\vspace{-5pt}
+    \resumeProjectHeading{Cypher CLI}
     \resumeItemListStart
-      \item {Color filters, transformations, and collage creation of user-selected regions of images}\vspace{-4pt}
+      \resumeSingleItem{Used \textbf{C++} to implement encryption and decryption algorithms for Caesar, Polybius, and Vigenère ciphers}
     \resumeItemListEnd
 
-    \item{\textbf{Retail Inventory Organizer} \normalfont{(Java)}}\vspace{-5pt}
+    \resumeProjectHeading{Image Manipulator}
     \resumeItemListStart
-      \item {Insertion, selection, and merge sort algorithms for item properties in storefront}\vspace{-8pt}
+      \resumeSingleItem{Used \textbf{Java} with \textbf{Swing} to implement color filters, image transformations, and collage creation}
+      \resumeSingleItem{Includes feature to apply manipulations to selected regions of images and entire images}
+    \resumeItemListEnd
+
+    \resumeProjectHeading{Retail Inventory Organizer}
+    \resumeItemListStart
+      \resumeSingleItem{Wrote Insertion, selection, and merge sort algorithms in \textbf{Java} to organize items in a storefront}
+      \resumeSingleItem{Includes ability to sort by variety of item properties}
+    \resumeItemListEnd
+
+    \resumeProjectHeading{Statistics Library}
+    \resumeItemListStart
+      \resumeSingleItem{Created a function library in \textbf{C++} with several functions to analyze data}
+      \resumeSingleItem{Reads user-selected data from .tsv files and runs a fast and simple anaylsis of the data}
     \resumeItemListEnd
   \resumeItemListEnd
-%   \resumeSubHeadingListStart
-%     \resumeSubItem{Image Manipulation (Java)}
-%       {Color filters, transformations, and collage creation of user-selected regions of images}
-%     \resumeSubItem{Retail Inventory Organizer (Java)}
-%       {Insertion, selection, and merge sort algorithms for item properties}
-% %     \resumeSubItem{Mac Setup}
-% %       {Book that gives step by step instructions on setting up developer environment on Mac OS.}
-%   \resumeSubHeadingListEnd
 
 %
 %--------PROGRAMMING SKILLS------------
@@ -199,14 +225,14 @@
   \resumeSubHeadingListEnd
 
 %--------LEADERSHIP EXPERIENCE------------
-\section{Leadership Expereince}
- \resumeSubHeadingListStart
-    \item{Captain of Cross Country, Swim and Dive, and Track and Field teams in High School}
-    \vspace{-6pt}\item{National Honor Society}
-    %  \hfill
-    %  \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+% \section{Leadership Expereince}
+%  \resumeSubHeadingListStart
+%     \item{Captain of Cross Country, Swim and Dive, and Track and Field teams in High School}
+%     \vspace{-6pt}\item{National Honor Society}
+%     %  \hfill
+%     %  \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
 
- \resumeSubHeadingListEnd
+%  \resumeSubHeadingListEnd
 
 
 %-------------------------------------------
