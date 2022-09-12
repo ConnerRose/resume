@@ -29,6 +29,7 @@
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
+\setlength{\footskip}{5pt}
 
 % Sections formatting
 \titleformat{\section}{
@@ -82,7 +83,7 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{{\Large Conner Rose}} & \href{https://www.linkedin.com/in/conner-rose-55b929227/}{www.linkedin.com/in/conner-rose-55b929227/} \\
-  \small Undergraduate Compueter Science Student & \href{https://www.github.com/ConnerRose/}{www.github.com/ConnerRose/} \\
+  \small Undergraduate Computer Science Student & \href{https://www.github.com/ConnerRose/}{www.github.com/ConnerRose/} \\
   & \href{mailto:conner.n.rose@gmail.com}{conner.n.rose@gmail.com} \\
   & (517) 648-1359 \\
 \end{tabular*}
@@ -95,7 +96,7 @@
       {University of Michigan, College of Engineering}{Ann Arbor, MI}
       {B.S.E. in Computer Science; Minor in Mathematics}{Aug. 2022 -- May 2025 (Expected)}
       \resumeItemListStart
-        \resumeItem{Relevant Coursework \normalfont{(AP Credit)}}{Calculus I; Calculus II; Intro Programming (AP Computer Science A)}
+        \resumeItem{Relevant Coursework \normalfont{(incoming credit)}}{Calculus I; Calculus II; Intro Programming (AP Computer Science A)}
           % \resumeItemListStart
           %   \resumeItem{\normalfont{MATH 120}}{Calculus I (AP Calculus AB)}
           %   \resumeItem{\normalfont{MATH 121}}{Calculus II (AP Calculus BC)}
@@ -119,7 +120,7 @@
           \resumeItemListStart
             \resumeItem{\normalfont{MTH 234}}{Multivariable Calculus}
             \resumeItem{\normalfont{MTH 235}}{Differential Equations}
-            \resumeItem{\normalfont{MTH 309}}{Lienar Algebra}
+            \resumeItem{\normalfont{MTH 309}}{Linear Algebra}
           \resumeItemListEnd
       \resumeItemListEnd
 
@@ -133,7 +134,7 @@
       %         \resumeItem{\normalfont{MTH 234}}{Multivariable Calculus}
       %         \item{AP Calculus AB}
       %         \resumeItem{\normalfont{MTH 235}}{Differential Equations}
-      %         \resumeItem{\normalfont{MTH 309}}{Lienar Algebra}
+      %         \resumeItem{\normalfont{MTH 309}}{Linear Algebra}
       %       \resumeItemListEnd
       %   \resumeItemListEnd
 
@@ -154,7 +155,7 @@
         \resumeItem{Problem Solving}
           {Enhanced problem solving skills through collaboration with other associates in identifying solutions; escalate to management as necessary}
         \resumeItem{Privacy Policies}
-          {Adhered to strict confidentiality policies to help create a trusting relationship with clients}
+          {Adhered to strict confidentiality policies to foster a trusting relationship with clients}
       \resumeItemListEnd
 
     % \resumeSubheading
@@ -180,18 +181,17 @@
 \section{Projects}
   \resumeItemListStart
 
-    \vspace{2pt}\resumeProjectHeading{Swim Lineup Generator/Meet Projector}
+    \vspace{2pt}\resumeProjectHeading{Lineup Genius}
     \resumeItemListStart
-      \resumeSingleItem{Created a tool in \textbf{Python} to generate optimal meet linups based on best times}
-      \resumeSingleItem{Uses \textbf{Beautiful Soup} to scrape data from an online meet result database}
-      \resumeSingleItem{Uses previous meet results to generate linups for dual meets between two selected teams and an optimal lineup for every team in a league championship}
-      \resumeSingleItem{As a former swim team captain during high school, I have a personal connection to this task}
-      \resumeSingleItem{This is a programmatic implementation of what me and my coaches spent hours pondering during the season}
+      \resumeSingleItem{Created a tool in \textbf{Python} to generate optimal meet lineups high school swim meets}
+      \resumeSingleItem{Downloads, stores, and manipulates data with \textbf{Pandas} from an online meet results database}
+      \resumeSingleItem{Analyzes previous meet results to generate linups for dual meets between two selected teams and an optimal lineup for every team in a league championship}
+      \resumeSingleItem{Implements ``power points" metric as a \textbf{stochastic function} to compare strengths of different times in different events}
     \resumeItemListEnd
 
     \resumeProjectHeading{Cypher CLI}
     \resumeItemListStart
-      \resumeSingleItem{Used \textbf{C++} to implement encryption and decryption algorithms for Caesar, Polybius, and Vigenère ciphers}
+      \resumeSingleItem{Encrypts and Decrypts messages using \textbf{C++} for Caesar, Polybius, and Vigenère cipher algorithms}
     \resumeItemListEnd
 
     \resumeProjectHeading{Image Manipulator}
@@ -200,27 +200,43 @@
       \resumeSingleItem{Includes feature to apply manipulations to selected regions of images and entire images}
     \resumeItemListEnd
 
-    \resumeProjectHeading{Retail Inventory Organizer}
-    \resumeItemListStart
-      \resumeSingleItem{Wrote Insertion, selection, and merge sort algorithms in \textbf{Java} to organize items in a storefront}
-      \resumeSingleItem{Includes ability to sort by variety of item properties}
-    \resumeItemListEnd
+    % \resumeProjectHeading{Retail Inventory Organizer}
+    % \resumeItemListStart
+    %   \resumeSingleItem{Wrote Insertion, selection, and merge sort algorithms in \textbf{Java} to organize items in a storefront}
+    %   \resumeSingleItem{Includes ability to sort by variety of item properties}
+    % \resumeItemListEnd
 
     \resumeProjectHeading{Statistics Library}
     \resumeItemListStart
-      \resumeSingleItem{Created a function library in \textbf{C++} with several functions to analyze data}
-      \resumeSingleItem{Reads user-selected data from .tsv files and runs a fast and simple anaylsis of the data}
+      \resumeSingleItem{Wrote a \textbf{C++} function library with several functions to analyze data}
+      \resumeSingleItem{Reads user-selected data from .tsv files and runs a fast and simple analysis of data}
     \resumeItemListEnd
   \resumeItemListEnd
 
 %
 %--------PROGRAMMING SKILLS------------
+\section{Extracurricular/Leadership Experience}
+  \resumeItemListStart
+    \resumeProjectHeading{\textnormal{Member of }MRun \textnormal{(U-M's Club Running Team)}}
+    \resumeProjectHeading{Team Captain \textnormal{of high school Cross Coutry, Swim and Dive, and Track and Field teams}}
+    \resumeItemListStart
+      \resumeSingleItem{Required and further improved group and one-on-one leadership and communication skills}
+    \resumeItemListEnd
+    \resumeProjectHeading{Community Service\textnormal{: Camp Invention Learning Intern, Salvation Army Angel Tree program, XC meet course martial, Swim meet timer, middle school Track Assistant Coach}}
+    % \resumeItemListStart
+    %   \resumeSingleItem{Salvation Army Angel Tree program}
+    %   \resumeSingleItem{Cross country course martial}
+    %   \resumeSingleItem{Swim meet timer}
+    %   \resumeSingleItem{Middle school track and field assistant coach}
+    % \resumeItemListEnd
+  \resumeItemListEnd
+
 \section{Programming Skills}
   \resumeSubHeadingListStart
     \item{
       \textbf{Languages}{: Python, Java, C++}
-    %  \hfill
-    %  \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+      \hfill
+      \textbf{Technologies}{: Git, Pandas, NumPy, Jupyter Notebook, MongoDB}
     }
   \resumeSubHeadingListEnd
 
