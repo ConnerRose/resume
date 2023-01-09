@@ -88,20 +88,22 @@
 \end{tabular*}
 
 %-----------EDUCATION-----------------
-\vspace{-23pt}\section{Education}
+\section{Education}
 \resumeSubHeadingListStart
 \resumeSubheading
 {University of Michigan, College of Engineering}{Ann Arbor, MI}
-{B.S.E. in Computer Science; Minor in Mathematics}{Aug. 2022 -- May 2025 (Expected)}
+{B.S.E. in Computer Science; Minor in Mathematics; GPA: 3.93/4.0}{Aug. 2022 -- Apr. 2025 (Expected)}
 \resumeItemListStart
-\resumeItem{Relevant Coursework \normalfont{(incoming credit)}}{Calculus I; Calculus II; Intro Programming (AP Computer Science A)}
+% \resumeItem{Relevant Coursework \normalfont{(incoming credit)}}{Calculus I; Calculus II; Intro Programming (AP Computer Science A)}
 % \resumeItemListStart
 %   \resumeItem{\normalfont{MATH 120}}{Calculus I (AP Calculus AB)}
 %   \resumeItem{\normalfont{MATH 121}}{Calculus II (AP Calculus BC)}
 %   \resumeItem{\normalfont{EECS 180}}{Introductory Computer Programming (AP Computer Science A)}
 % \resumeItemListEnd
 
-\resumeItem{Relevant Coursework \normalfont{(to be completed 2022-23)}}{EECS 203 - Discrete Mathematics; EECS 280 - Programming and Intro Data Structures; EECS 281 - Data Structures and Algorithms; MATH 465 - Combinatorics}
+% \resumeItem{Relevant Coursework \normalfont{(to be completed 2022-23)}}{EECS 203 - Discrete Mathematics; EECS 280 - Programming and Intro Data Structures; EECS 281 - Data Structures and Algorithms; MATH 465 - Combinatorics}
+\resumeItem{Relevant Coursework \textnormal{(AP Credit from High School)}}{Calculus I; Calculus II; Intro Programming}
+\resumeItem{Relevant Coursework}{Programming and Data Structures; Discrete Mathematics; Practical Data Science; \\ Data Structures and Algorithms; Combinatorics}
 % \resumeItemListStart
 %   \resumeItem{\normalfont{EECS 203}}{Discrete Mathematics}
 %   \resumeItem{\normalfont{EECS 280}}{Programming and Intro Data Structures}
@@ -111,9 +113,9 @@
 
 \resumeSubheading
 {Michigan State University}{East Lansing, MI}
-{Dual Enrollment in Mathematics;  GPA: 4.0/4.0}{Jan. 2021 -- May 2022}
+{High School Dual Enrollment: Mathematics;  GPA: 4.0/4.0}{Jan. 2021 -- May 2022}
 \resumeItemListStart
-\resumeItem{Relevant Coursework}{MTH 234 - Multivariable Calculus; MTH 235 - Differential Equations; MTH 309 - Linear Algebra}
+\resumeItem{Relevant Coursework}{Multivariable Calculus; Differential Equations; Linear Algebra}
 % \resumeItemListStart
 %   \resumeItem{\normalfont{MTH 234}}{Multivariable Calculus}
 %   \resumeItem{\normalfont{MTH 235}}{Differential Equations}
@@ -156,7 +158,7 @@
 
 % \resumeSubheading
 %   {City of East Lansing}{East Lansing, MI}
-%   {Lifeguad/Swim Instructor}{Summer 2021}
+%   {Lifeguard/Swim Instructor}{Summer 2021}
 %   \resumeItemListStart
 %     \resumeSingleItem{Improved sense of responsibility and appreciation for doing things by the book}
 %     \resumeSingleItem{Ensured safety of all pool-goers}
@@ -176,17 +178,24 @@
 \section{Projects}
 \resumeItemListStart
 
-\vspace{2pt}\resumeProjectHeading{Lineup Genius}
-\resumeItemListStart
-\resumeSingleItem{Created a tool in \textbf{Python} to generate optimal meet lineups high school swim meets and simulate results}
-\resumeSingleItem{Downloads, stores, and manipulates data with \textbf{Pandas} from an online meet results database}
-\resumeSingleItem{Analyzes previous meet results to generate linups for dual meets between two selected teams and an optimal lineup for every team in a league championship}
-\resumeSingleItem{Uses ``power points'' as a \textbf{stochastic} metric to compare strengths of different times in different events}
-\resumeItemListEnd
+\vspace{2pt}
+% \resumeProjectHeading{Lineup Genius}
+% \resumeItemListStart
+% \resumeSingleItem{Created a tool in \textbf{Python} to generate optimal meet lineups high school swim meets and simulate results}
+% \resumeSingleItem{Downloads, stores, and manipulates data with \textbf{Pandas} from an online meet results database}
+% \resumeSingleItem{Analyzes previous meet results to generate linups for dual meets between two selected teams and an optimal lineup for every team in a league championship}
+% \resumeSingleItem{Uses ``power points'' as a \textbf{stochastic} metric to compare strengths of different times in different events}
+% \resumeItemListEnd
 
 \resumeProjectHeading{Nim-AI}
 \resumeItemListStart
-\resumeSingleItem{Implemented \textbf{Epsilon-Greedy Q-learning} to teach an AI agent to play Nim \href{https://en.wikipedia.org/wiki/Nim}{(en.wikipedia.org/wiki/Nim)}}
+\resumeSingleItem{Implemented \textbf{Epsilon-Greedy Q-learning} in \textbf{Python} to teach an AI agent to play \href{https://en.wikipedia.org/wiki/Nim}{Nim}}
+\resumeItemListEnd
+
+\resumeProjectHeading{Piazza Classifier}
+\resumeItemListStart
+\resumeSingleItem{Created a \textbf{C++} program capable of classifying the topics of Piazza forum posts}
+\resumeSingleItem{Uses a \textbf{bag of words model} to train and classify the posts}
 \resumeItemListEnd
 
 \resumeProjectHeading{Content-Aware Image Scaler}
@@ -229,6 +238,9 @@
 \section{Extracurricular/Leadership Experience}
 \resumeItemListStart
 \resumeProjectHeading{\textnormal{Member of} MRun \textnormal{national championship team.}}
+\resumeItemListStart
+\resumeSingleItem{Volunteered in Ann Arbor Marathon; fundraised for the Special Olympics}
+\resumeItemListEnd
 \resumeProjectHeading{Team Captain \textnormal{of high school Cross Country, Swim and Dive, and Track and Field teams}}
 \resumeItemListStart
 \resumeSingleItem{Required and further improved group and one-on-one leadership and communication skills}
@@ -244,15 +256,12 @@
 
 \section{Programming Skills}
 \resumeSubHeadingListStart
-\item{
-            \textbf{Languages}{: Python, Java, C++}
-            \hfill
-            \textbf{Technologies}{: Git, Pandas, NumPy, Jupyter Notebook, MongoDB}
-      }
+\item \textbf{Languages}{: Python, Java, C++, HTML/CSS}
+\item \textbf{Technologies}{: Git, Pandas, NumPy, Scikit-learn, Jupyter Notebook, MongoDB}
 \resumeSubHeadingListEnd
 
 %--------LEADERSHIP EXPERIENCE------------
-% \section{Leadership Expereince}
+% \section{Leadership Experience}
 %  \resumeSubHeadingListStart
 %     \item{Captain of Cross Country, Swim and Dive, and Track and Field teams in High School}
 %     \vspace{-6pt}\item{National Honor Society}
