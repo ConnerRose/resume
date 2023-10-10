@@ -1,0 +1,137 @@
+\documentclass[letterpaper,11pt]{article}
+\include{preamble}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{{\LARGE Conner Rose}} &
+    \href{https://linkedin.com/in/ConnerRose}{https://linkedin.com/in/ConnerRose}
+    \\
+    \small Undergraduate Computer Science Student &
+    \href{https://github.com/ConnerRose}{https://github.com/ConnerRose} \\
+    &
+    \href{mailto:conner.n.rose@gmail.com}{conner.n.rose@gmail.com} \\
+    & (517)
+    648-1359 \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\vspace*{-23pt}
+\section{Education}
+\subheading{University of Michigan}{Ann Arbor, MI}{Aug. 2022 -- May 2025}
+{B.S.E. in Computer Science, Completing Requirements for B.S. in Honors Mathematics}
+{GPA: 3.88/4.0}
+\begin{itemize}[leftmargin=*]
+    \item \vspace{-5pt} \small \textbf{CS Coursework}: \hspace{-7pt}
+          Programming and Data Structures, Data Science for Engineers,
+          Data Structures and Algorithms, Discrete Mathematics,
+          Machine Learning*, Foundations of Computer Science*,
+          Computer Organization*, Web Systems*
+    \item \vspace{-7pt} \small \textbf{Math Coursework}: \hspace{-7pt}
+          Calculus I-IV, Linear Algebra, Combinatorics and Graph Theory,
+          Advanced Calculus I (Analysis)*, Probability*, Probability Theory*,
+          Advanced Linear Algebra* \hfill*2023-24 coursework
+\end{itemize}
+
+%--------PROGRAMMING SKILLS------------
+\section{Technical Skills}
+\textbf{Languages}: Python, C++, Java, JavaScript/TypeScript, HTML/CSS, SQL
+(SQLite), \LaTeX \\
+\textbf{Tools}: Git, Docker, Jenkins, Jupyter Notebook,
+MongoDB, Pandas, NumPy, Scikit-learn, Django
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\subheading{Traders at Michigan}{Ann Arbor, MI}{Oct. 2023 -- Present}
+{Software Engineer}{}
+\subheading{Bloomberg L.P.}{New York, NY}{May -- Aug. 2023}
+{CTO Office Intern - Compute Architecture and OSPO}{}
+\begin{itemize}[leftmargin=*]
+    \item \vspace{-3pt} \small Increased security of Bloomberg's public GitHub
+          organization by ensuring appropriate removal of inactive accounts
+          through automated access revocation using LDAP and
+          \textbf{Python}, deployed in a \textbf{Docker}-containerized
+          \textbf{Jenkins Pipeline}
+    \item \vspace{-7pt} \small Developed a GitHub crawler using Python to scan
+          all projects contributed to by Bloomberg employees over 10 years,
+          automating contribution cataloging and
+          verification of open-source license compliance,
+          increasing audited projects by 3x
+\end{itemize}
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\subheading{Movie Review Prediction System}{}{}
+{Python, Pandas, NumPy, Scikit-learn, Gensim, Matplotlib}{}
+\begin{itemize}[leftmargin=*]
+    \item \vspace{-3pt} \small Performed feature extraction on movie review
+          dataset by conducting one-hot encoding and trained support vector
+          machines capable of classifying positive and negative reviews with
+          92\% accuracy on imbalanced dataset
+    \item \vspace{-7pt} \small Investigated gender bias within dataset,
+          leveraging word embeddings to determine
+          association of male and female gendered language with positive and
+          negative terms in reviews
+\end{itemize}
+\subheading{MST/TSP Solution Generator}{}{}
+{C++}{}
+\begin{itemize}[leftmargin=*]
+    \item \vspace{-3pt} \small Developed an implementation of Prim's algorithm
+          to efficiently create a minimum spanning tree for a set of vertices
+    \item \vspace{-7pt} \small Utilized arbitrary insertion heuristic approach
+          to generate approximate solutions for the traveling salesperson
+          problem with quadratic time complexity,
+          allowing for computation for 10,000+ points in seconds
+    \item \vspace{-7pt} \small Created a branch and bound algorithm to
+          guarantee optimal solutions to the traveling salesperson problem and
+          optimized via solution tree pruning, using MST-derived upper bound,
+          reducing runtime by 90\% with optimal solutions
+\end{itemize}
+\subheading{SQL Clone}{}{}
+{C++}{}
+\begin{itemize}[leftmargin=*]
+    \item \vspace{-3pt} \small Implemented a database and query command
+          language similar to SQL, including various database and table commands
+          such as insertion, conditional printing, conditional deletion, and
+          inner join
+    \item \vspace{-7pt} \small Incorporated red-black trees and hash tables
+          to index tables, increasing efficiency of conditional print commands
+    \item \vspace{-7pt} \small Utilized map indices to optimize inner join
+          command from quadratic to linear time complexity
+\end{itemize}
+\subheading{Nim-AI}{}{}
+{Python}{}
+\begin{itemize}[leftmargin=*]
+    \item \vspace{-3pt} \small Constructed an Epsilon-Greedy Q-learning
+          algorithm to train an AI agent to play the game
+          \href{https://en.wikipedia.org/wiki/Nim}{Nim}
+    \item \vspace{-7pt} \small Optimized training parameters to reduce number
+          of necessary training rounds and maximize AI move accuracy
+\end{itemize}
+% \resumeItemListStart
+
+% \resumeProjectHeading{Piazza Classifier $\mid$ C++}
+% \resumeItemListStart
+% \resumeSingleItem{Developed a program capable of accurately categorizing topics of Piazza forum posts, employing a bag-of-words model}
+% \resumeSingleItem{Trained model using historical user data to create associations with commonly used phrases, across several semesters}
+% \resumeItemListEnd
+% \resumeItemListEnd
+
+% \section{Extracurricular/Leadership Experience}
+% \resumeItemListStart
+% \resumeProjectHeading{\textnormal{Founding member of Traders at Michigan}}
+% \resumeProjectHeading{\textnormal{Member of University of Michigan Math Club}}
+% \resumeProjectHeading{\textnormal{Member of Michigan Hackers}}
+% \resumeProjectHeading{\textnormal{MRun (UMich Running Club) national championship
+% Cross Country and Track teams}}
+% \resumeItemListStart
+% \resumeSingleItem{Volunteer course marshal for Ann Arbor Marathon; fundraised for the Special Olympics}
+% \resumeItemListEnd
+% \resumeItemListEnd
+
+%
+\end{document}
