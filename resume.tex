@@ -4,37 +4,39 @@
 
 \begin{center}
     \Huge{\textbf{Conner Rose}} \\
-    \vspace{5pt}
     \small
-    \begin{tabular}
-        {@{}c@{\hspace{3pt}}|@{\hspace{3pt}}c@{\hspace{3pt}}|@{\hspace{3pt}}c@{\hspace{3pt}}|@{\hspace{3pt}}c}
+    \begin{center}
         \href{https://linkedin.com/in/ConnerRose}{https://linkedin.com/in/ConnerRose}
-         & \href{https://github.com/ConnerRose}{https://github.com/ConnerRose}
-         & \href{mailto:conner.n.rose@gmail.com}{conner.n.rose@gmail.com}
-         & (517) 648-1359
-    \end{tabular}
+        \labelitemi
+        \ \href{https://github.com/ConnerRose}{https://github.com/ConnerRose}
+        \labelitemi
+        \ \href{mailto:conner.n.rose@gmail.com}{conner.n.rose@gmail.com}
+        \labelitemi
+        \ (517) 648-1359
+    \end{center}
 \end{center}
 
 \section{Education}
-\subheading{University of Michigan}{Ann Arbor, MI}{Aug. 2022 -- May 2025}
+\subheading{University of Michigan}{Ann Arbor, MI}{August 2022 -- May 2025}
 {B.S.E. in Computer Science, Completing Requirements for B.S. in Honors Mathematics}
 {GPA: 3.88/4.0}
 \begin{itemize}[leftmargin=*]
-    \item \vspace{-5pt} \small \textbf{CS Coursework}: \hspace{-7pt}
+    \item \vspace{-5pt} \small \textbf{CS Coursework}:
           Programming and Data Structures, Data Science for Engineers,
           Data Structures and Algorithms, Discrete Mathematics,
-          Machine Learning, Computer Science Theory,
+          Machine Learning, Algorithm and Computation Theory,
           Computer Organization, Web Systems
-    \item \vspace{-7pt} \small \textbf{Math Coursework}: \hspace{-7pt}
+    \item \vspace{-7pt} \small \textbf{Math Coursework}:
           Calculus I-IV, Linear Algebra, Combinatorics and Graph Theory,
-          Real Analysis, Probability, Probability Theory,
+          Probability, Real Analysis, Probability Theory,
           Theoretical Statistics
+    \item \vspace{-7pt} \small \textbf{Extracurricular}:
+          Traders at Michigan, Quantitative Investment Society, Michigan
+          Hackers, Mathematics Club, MRun
 \end{itemize}
 
 \section{Experience}
-\subheading{Traders at Michigan}{Ann Arbor, MI}{Oct. 2023 -- Present}
-{Software Engineer}{}
-\subheading{Bloomberg L.P.}{New York, NY}{May -- Aug. 2023}
+\subheading{Bloomberg L.P.}{New York, NY}{Summer 2023}
 {CTO Office Intern - Compute Architecture and OSPO}{}
 \begin{itemize}[leftmargin=*]
     \item \vspace{-3pt} \small Increased security of Bloomberg's public GitHub
@@ -46,25 +48,41 @@
           to scan
           all projects contributed to by Bloomberg employees over 10 years,
           automating contribution cataloging and
-          verification of open-source license compliance,
+          open-source license compliance verification,
           increasing audited projects by \textbf{3x}
 \end{itemize}
 
 \section{Projects}
-\subheading{Movie Review Prediction System}{}{}
-{Python, Pandas, NumPy, Scikit-learn, Gensim, Matplotlib}{}
+\subheading{Historical Landmark Image Classifier}{}{October -- November 2023}
+{Python, PyTorch, Pandas, NumPy, Matplotlib}{}
 \begin{itemize}[leftmargin=*]
-    \item \vspace{-3pt} \small Performed feature extraction on movie review
-          dataset by conducting one-hot encoding and trained \textbf{support vector
-              machines} capable of classifying positive and negative reviews with
-          \textbf{92\%} accuracy on imbalanced dataset
-    \item \vspace{-7pt} \small Investigated gender bias within dataset,
+    \item \vspace{-3pt} \small Designed and implemented
+          \textbf{convolutional neural networks} for multiclass image
+          classification of historical landmarks
+    \item \vspace{-7pt} \small Researched \textbf{model architecture}
+          and \textbf{data augmentation}, employing subsampling and noise generation
+          to improve accuracy and mitigate overfitting while training model
+          with 5 convolutional layers and \textbf{+2,000,000} learnable parameters
+    \item \vspace{-7pt} \small Utilized \textbf{transfer learning}, leveraging
+          multiclass model to initialize weights
+          for training on binary classification target problem, reducing
+          training time, preventing overfitting, and
+          fine-tuning \textbf{fully-connected} layers to improve performance
+\end{itemize}
+\subheading{Movie Review Prediction System}{}{September -- October 2023}
+{Python, Scikit-learn, Pandas, NumPy, Gensim, Matplotlib}{}
+\begin{itemize}[leftmargin=*]
+    \item \vspace{-3pt} \small Trained \textbf{support vector
+              machines} capable of classifying positive and negative reviews
+          movie reviews achieving \textbf{92\%} accuracy
+          through \textbf{sentiment analysis} techniques, including
+          learned word association and negation handling
+    \item \vspace{-7pt} \small Identified gender bias within dataset,
           leveraging \textbf{word embeddings} to determine
           association of male and female gendered language with positive and
           negative terms in reviews
 \end{itemize}
-\subheading{MST/TSP Solution Generator}{}{}
-{C++}{}
+\subheadingLine{MST/TSP Solution Generator}{C++}{April 2023}
 \begin{itemize}[leftmargin=*]
     \item \vspace{-3pt} \small Developed an implementation of \textbf{Prim's algorithm}
           to efficiently find \textbf{minimum spanning trees} for a set of vertices
@@ -77,8 +95,7 @@
           optimized via \textbf{solution tree pruning}, using MST-derived upper bound,
           reducing runtime by \textbf{90\%}
 \end{itemize}
-\subheading{SQL Clone}{}{}
-{C++}{}
+\subheadingLine{SQL Clone}{C++}{February 2023}
 \begin{itemize}[leftmargin=*]
     \item \vspace{-3pt} \small Implemented a database and query command
           language similar to \textbf{SQL}, including various database and table commands
@@ -90,16 +107,6 @@
     \item \vspace{-7pt} \small Utilized map indices to optimize inner join
           command from quadratic to linear time complexity
 \end{itemize}
-\subheading{Nim-AI}{}{}
-{Python}{}
-\begin{itemize}[leftmargin=*]
-    \item \vspace{-3pt} \small Constructed an \textbf{Epsilon-Greedy Q-learning}
-          algorithm to train an AI agent to play the game
-          \href{https://en.wikipedia.org/wiki/Nim}{Nim}
-    \item \vspace{-7pt} \small Optimized training parameters to reduce number
-          of necessary training rounds and maximize AI move accuracy
-\end{itemize}
-
 \section{Technical Skills}
 \textbf{Languages}: Python, C++, Java, JavaScript/TypeScript, HTML/CSS, SQL
 (SQLite), \LaTeX \\
