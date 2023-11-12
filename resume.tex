@@ -2,13 +2,16 @@
 \include{preamble}
 \begin{document}
 
+\setlist[itemize]{itemsep=-2pt, leftmargin=*, before=\small\vspace{-\baselineskip}\vspace{5pt},
+    after=\vspace{-\baselineskip}\vspace{5pt}}
+
 \begin{center}
     \Huge{\textbf{Conner Rose}} \\
     \small
     \begin{center}
-        \href{https://linkedin.com/in/ConnerRose}{https://linkedin.com/in/ConnerRose}
+        \href{https://linkedin.com/in/ConnerRose}{linkedin.com/in/ConnerRose}
         \labelitemi
-        \ \href{https://github.com/ConnerRose}{https://github.com/ConnerRose}
+        \ \href{https://github.com/ConnerRose}{github.com/ConnerRose}
         \labelitemi
         \ \href{mailto:conner.n.rose@gmail.com}{conner.n.rose@gmail.com}
         \labelitemi
@@ -18,99 +21,83 @@
 
 \section{Education}
 \subheading{University of Michigan}{Ann Arbor, MI}{August 2022 -- May 2025}
-{B.S.E. in Computer Science, Completing Requirements for B.S. in Honors Mathematics}
-{GPA: 3.88/4.0}
-\begin{itemize}[leftmargin=*]
-    \item \vspace{-5pt} \small \textbf{CS Coursework}:
-          Programming and Data Structures, Data Science for Engineers,
-          Data Structures and Algorithms, Discrete Mathematics,
-          Machine Learning, Algorithm and Computation Theory,
-          Computer Organization, Web Systems
-    \item \vspace{-7pt} \small \textbf{Math Coursework}:
-          Calculus I-IV, Linear Algebra, Combinatorics and Graph Theory,
-          Probability, Real Analysis, Probability Theory,
-          Theoretical Statistics
-    \item \vspace{-7pt} \small \textbf{Extracurricular}:
-          Traders at Michigan, Quantitative Investment Society, Michigan
-          Hackers, Mathematics Club, MRun
+{B.S.E. in Computer Science, Completing Requirements for B.S. in Honors Mathematics}{GPA: 3.88/4.0}
+\begin{itemize}
+    \item \textbf{CS Coursework}: Programming and Data Structures, Data Science for
+          Engineers, Data Structures and Algorithms, Discrete Mathematics, Machine
+          Learning, Algorithm and Computation Theory, Computer Organization, Web Systems
+    \item \textbf{Mathematics Coursework}: Calculus I-IV, Linear Algebra, Combinatorics
+          and Graph Theory, Probability, Real Analysis, Probability Theory, Theoretical
+          Statistics
+    \item \textbf{Extracurricular}: Traders at Michigan, Quantitative Investment Society,
+          Michigan Hackers, Mathematics Club, MRun
 \end{itemize}
 
 \section{Experience}
 \subheading{Bloomberg L.P.}{New York, NY}{Summer 2023}
 {CTO Office Intern - Compute Architecture and OSPO}{}
-\begin{itemize}[leftmargin=*]
-    \item \vspace{-3pt} \small Increased security of Bloomberg's public GitHub
-          organization by ensuring appropriate removal of inactive accounts
-          through automated access revocation using \textbf{LDAP} and
-          \textbf{Python}, deployed in a \textbf{Docker}-containerized
-          \textbf{Jenkins Pipeline}
-    \item \vspace{-7pt} \small Developed a GitHub crawler using \textbf{Python}
-          to scan
-          all projects contributed to by Bloomberg employees over 10 years,
-          automating contribution cataloging and
-          open-source license compliance verification,
-          increasing audited projects by \textbf{3x}
+\begin{itemize}
+    \item Designed automated access revocation system using \textbf{Python} and
+          \textbf{LDAP}, deployed to \textbf{Docker}-containerized \textbf{Jenkins
+              Pipeline}, ensuring appropriate removal of inactive accounts from Bloomberg's
+          open-source GitHub repositories
+    \item Developed a GitHub crawler using \textbf{Python} to scan all projects
+          contributed to by Bloomberg employees over 10 years, automating contribution
+          cataloging and open-source license compliance verification, increasing audited
+          projects by \textbf{3x}
 \end{itemize}
 
 \section{Projects}
 \subheading{Historical Landmark Image Classifier}{}{October -- November 2023}
-{Python, PyTorch, Pandas, NumPy, Matplotlib}{}
-\begin{itemize}[leftmargin=*]
-    \item \vspace{-3pt} \small Designed and implemented
-          \textbf{convolutional neural networks} for multiclass image
-          classification of historical landmarks
-    \item \vspace{-7pt} \small Researched \textbf{model architecture}
-          and \textbf{data augmentation}, employing subsampling and noise generation
-          to improve accuracy and mitigate overfitting while training model
-          with 5 convolutional layers and \textbf{+2,000,000} learnable parameters
-    \item \vspace{-7pt} \small Utilized \textbf{transfer learning}, leveraging
-          multiclass model to initialize weights
-          for training on binary classification target problem, reducing
-          training time, preventing overfitting, and
-          fine-tuning \textbf{fully-connected} layers to improve performance
+{Python, PyTorch, Pandas, NumPy, Matplotlib, Computer Vision}{}
+\begin{itemize}
+    \item Designed and implemented \textbf{convolutional neural networks} for multiclass
+          image classification of historical landmarks
+    \item Researched \textbf{model architecture} and \textbf{data augmentation},
+          employing subsampling and noise generation to improve accuracy and mitigate
+          overfitting while training model with 5 convolutional layers and
+          \textbf{+2,000,000} learnable parameters
+    \item Utilized \textbf{transfer learning}, leveraging multiclass model to initialize
+          weights for training on binary classification target problem, reducing training
+          time, preventing overfitting, and fine-tuning fully-connected layers to improve
+          performance
 \end{itemize}
 \subheading{Movie Review Prediction System}{}{September -- October 2023}
 {Python, Scikit-learn, Pandas, NumPy, Gensim, Matplotlib}{}
-\begin{itemize}[leftmargin=*]
-    \item \vspace{-3pt} \small Trained \textbf{support vector
-              machines} capable of classifying positive and negative reviews
-          movie reviews achieving \textbf{92\%} accuracy
-          through \textbf{sentiment analysis} techniques, including
-          learned word association and negation handling
-    \item \vspace{-7pt} \small Identified gender bias within dataset,
-          leveraging \textbf{word embeddings} to determine
-          association of male and female gendered language with positive and
+\begin{itemize}
+    \item Trained \textbf{support vector machines} capable of classifying positive and
+          negative reviews movie reviews achieving \textbf{92\%} accuracy through
+          \textbf{sentiment analysis} techniques, including learned word association and
+          negation handling
+    \item Identified gender bias within dataset, leveraging \textbf{word embeddings} to
+          determine association of male and female gendered language with positive and
           negative terms in reviews
 \end{itemize}
 \subheadingLine{MST/TSP Solution Generator}{C++}{April 2023}
-\begin{itemize}[leftmargin=*]
-    \item \vspace{-3pt} \small Developed an implementation of \textbf{Prim's algorithm}
-          to efficiently find \textbf{minimum spanning trees} for a set of vertices
-    \item \vspace{-7pt} \small Utilized \textbf{arbitrary insertion} heuristic approach
-          to generate approximate solutions for the \textbf{traveling salesperson
-              problem} with quadratic time complexity,
-          allowing for computation for \textbf{+10,000} points in seconds
-    \item \vspace{-7pt} \small Created a \textbf{branch and bound} algorithm to
-          guarantee optimal solutions to the traveling salesperson problem and
-          optimized via \textbf{solution tree pruning}, using MST-derived upper bound,
-          reducing runtime by \textbf{90\%}
+\begin{itemize}
+    \item Developed an implementation of \textbf{Prim's algorithm} to efficiently find
+          \textbf{minimum spanning trees} for complete graphs
+    \item Utilized \textbf{arbitrary insertion} heuristic approach to generate
+          approximate solutions for the \textbf{traveling salesperson problem} with
+          quadratic time complexity, allowing for computation for \textbf{+10,000-order}
+          complete graphs in seconds
+    \item Created a \textbf{branch and bound} algorithm to guarantee optimal solutions to
+          the traveling salesperson problem and optimized via \textbf{solution tree
+              pruning}, using MST-derived upper bound, reducing runtime by \textbf{90\%}
 \end{itemize}
 \subheadingLine{SQL Clone}{C++}{February 2023}
-\begin{itemize}[leftmargin=*]
-    \item \vspace{-3pt} \small Implemented a database and query command
-          language similar to \textbf{SQL}, including various database and table commands
-          such as insertion, conditional printing, conditional deletion, and
-          inner join
-    \item \vspace{-7pt} \small Incorporated \textbf{red-black trees} and
-          \textbf{hash tables}
-          to index tables, increasing efficiency of conditional print commands
-    \item \vspace{-7pt} \small Utilized map indices to optimize inner join
-          command from quadratic to linear time complexity
+\begin{itemize}
+    \item Implemented a database and query command language similar to \textbf{SQL},
+          including various database and table commands including table creation,
+          deletion, insertion, conditional printing, conditional deletion, and inner join
+    \item Incorporated \textbf{red-black trees} and \textbf{hash tables} to index tables,
+          increasing efficiency of conditional print commands
+    \item Utilized map indices to optimize inner join command from quadratic to linear
+          time complexity
 \end{itemize}
 \section{Technical Skills}
 \textbf{Languages}: Python, C++, Java, JavaScript/TypeScript, HTML/CSS, SQL
 (SQLite), \LaTeX \\
 \textbf{Tools}: Git, Docker, Jenkins, Jupyter Notebook,
-MongoDB, Pandas, NumPy, Scikit-learn, Django
-
+MongoDB, Pandas, NumPy, Scikit-learn, Django, LDAP
 \end{document}

@@ -32,7 +32,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-    \vspace{-4pt}\scshape\raggedright\large
+    \vspace{-4pt}\scshape\raggedright\Large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 %-------------------------
@@ -80,21 +80,17 @@
     \vspace{-5pt}}
 
 \newcommand{\subheading}[5]{
-    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-        \ifx&#2&%
-        \textbf{#1} & \textbf{#3} \\ \textit{\small #4} & \textit{\small #5} \\
-        \else
-        \textbf{#1}, \emph{#2} & \textbf{#3} \\ \textit{\small #4} & \textit{\small #5} \\
-        \fi
-    \end{tabular*}
+    \ifx&#2&%
+    \textbf{#1} \hfill \textbf{#3} \\ \textit{\small #4} \hfill \textit{\small #5} \\
+    \else
+    \textbf{#1}, \emph{#2} \hfill \textbf{#3} \\ \textit{\small #4} \hfill \textit{\small #5} \\
+    \fi
 }
 
 \newcommand{\subheadingLine}[3]{
-    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-        \ifx&#2&%
-        \textbf{#1} & \textbf{#3}
-        \else
-        \textbf{#1}, \emph{#2} & \textbf{#3}
-        \fi
-    \end{tabular*}
+    \ifx&#2&%
+    \textbf{#1} \hfill \textbf{#3} \\
+    \else
+    \textbf{#1}, \emph{#2} \hfill \textbf{#3} \\
+    \fi
 }
