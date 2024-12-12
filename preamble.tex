@@ -19,12 +19,12 @@
 
 % Bullet formatting
 \AtBeginDocument{
-    \setlist[itemize]{
-        itemsep=-2pt,
-        leftmargin=*,
-        before=\small\vspace{-\baselineskip}\vspace{5pt},
-        after=\vspace{-\baselineskip}\vspace{5pt}
-    }
+  \setlist[itemize]{
+    itemsep=-2pt,
+    leftmargin=*,
+    before=\small\vspace{-\baselineskip}\vspace{5pt},
+    after=\vspace{-\baselineskip}\vspace{5pt}
+  }
 }
 
 \raggedbottom
@@ -34,24 +34,24 @@
 
 % Sections formatting
 \titleformat{\section}{
-    \vspace{-4pt}\scshape\raggedright\Large
+  \vspace{-9pt}\scshape\raggedright\Large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Custom commands for subheadings
 \newcommand{\subheading}[5]{
-    \ifx&#2&%
-    \textbf{#1} \hfill \textbf{#3} \\
-    \textit{\small #4} \hfill \textit{\small #5} \\
-    \else
-    \textbf{#1}, \emph{#2} \hfill \textbf{#3} \\
-    \textit{\small #4} \hfill \textit{\small #5} \\
-    \fi
+  \ifx&#2&%
+  \textbf{#1} \hfill \textbf{#3} \\
+  \textit{\small #4} \hfill \textit{\small #5} \\
+  \else
+  \textbf{#1}, \emph{#2} \hfill \textbf{#3} \\
+  \textit{\small #4} \hfill \textit{\small #5} \\
+  \fi
 }
 
 \newcommand{\subheadingLine}[3]{
-    \ifx&#2&%
-    \textbf{#1} \hfill \textbf{#3} \\
-    \else
-    \textbf{#1}, \emph{#2} \hfill \textbf{#3} \\
-    \fi
+  \ifx&#2&%
+  \textbf{#1} \hfill \textbf{#3} \\
+  \else
+  \textbf{#1}, \emph{#2} \hfill \textbf{#3} \\
+  \fi
 }
