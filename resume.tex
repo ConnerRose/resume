@@ -50,8 +50,6 @@
 \subheading{Traders At Michigan}{Ann Arbor, MI}{September 2023 -- Present}
 {Head of Software Engineering}{}
 \begin{itemize}
-  \item Lead development of ETF trading game, played at UMich Trading Competition
-        by $\sim$100 competitors simultaneously
   \item Design and deliver advanced SWE curriculum to club members, supporting
         their SWE interview and career preparation
 \end{itemize}
@@ -69,12 +67,25 @@
 \end{itemize}
 
 \section{Projects}
+\subheading{Omakase (Trading Game)}{}{March 2025}
+{C++20, TypeScript, React, WebSockets}{}
+\begin{itemize}
+  \item Developed real-time ETF trading game, played at UMich Trading Competition
+        by \textbf{120 players concurrently}
+  \item Implemented high-performance matching engine in \textbf{C++}, achieving
+        order processing time of \textbf{75ns}
+  \item Architected \textbf{WebSocket}-based communication protocol to support high
+        trading volume, avoiding continuous polling
+  \item Utilized \textbf{state machine replication} to ensure consistent state
+        resulting from potential backend crashes and reboots
+\end{itemize}
 \subheading{Network File Server}{}{December 2024}
 {C++20, Boost, Multithreading, Socket Programming, File Systems}{}
 \begin{itemize}
   \item Designed and implemented \textbf{highly-concurrent} network file system in modern
         \textbf{C++}, using \textbf{Boost} upgradeable reader-writer locks for
-        increased concurrency, while guaranteeing disk consistency
+        increased concurrency, while guaranteeing disk consistency in the event
+        of crashes
 \end{itemize}
 \subheadingLine{Operating System Kernel}{C++20}{October - November 2024}
 \begin{itemize}
@@ -83,17 +94,6 @@
   \item Wrote a threading library in \textbf{C++}, including \textbf{threads}, \textbf{mutexes},
         and \textbf{condition variables}, with \textbf{multi-core} CPU support
 \end{itemize}
-\subheading{Zinger's (ETF Trading Game)}{}{March -- July 2024}
-{C++20, TypeScript, React, Websockets, Multithreading}{}
-\begin{itemize}
-  \item Architected ETF Trading Game, utilizing \textbf{websocket}-based
-        infrastructure, enabling real-time data and order matching
-  \item Developed \textbf{multithreaded} matching engine in \textbf{C++}, capable of
-        handling \textbf{4M orders} in $\mathbf{< 3}$ \textbf{seconds} across 4 assets
-  \item Implemented backend server using $\mathbf{\mu}$\textbf{WebSockets}
-        integrated with matching engine, capable of sub $\mathbf{0.1}$\textbf{ms 99\% latency}
-\end{itemize}
-
 \section{Competitions}
 \subheadingLine{University of Michigan Collegiate Poker Tournament}{}{October 2024}
 \begin{itemize}
