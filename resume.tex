@@ -14,13 +14,14 @@
 
 \section{Education}
 \subheading{University of Michigan}{Ann Arbor, MI}{August 2022 - May 2026}
-{B.S.E. and M.S.E. in Computer Science (with a lot of math for fun)}{GPA: 3.75/4.0}
+{B.S.E. and M.S.E. in Computer Science, Minor in Mathematics}{GPA: 3.71/4.0}
 \begin{itemize}
   \item \textbf{CS Coursework}: Data Structures and Algorithms, Discrete Math,
         Machine Learning, Computer Organization, Computation Theory,
-        Web Systems, Advanced Operating Systems, Formal Verification of Systems
-        Software, \\
-        System Design of a Search Engine, Distributed Systems
+        Web Systems, Operating Systems, Formal Verification of Systems
+        Software,
+        Search Engines, Distributed Systems, Advanced Compilers,
+        Randomness and Computation, Category Theory
   \item \textbf{Mathematics Coursework}: Calculus I-IV, Linear Algebra,
         Combinatorics and Graph Theory, Probability, Real Analysis, Graduate
         Probability Theory, Advanced Linear Algebra, Discrete State Stochastic
@@ -30,9 +31,20 @@
 
 \section{Experience}
 \subheading{IMC Trading}{Chicago, IL}{June -- August 2025}
-{Incoming Software Engineering Intern}{}
+{Software Engineer Intern - Equity Options Execution}{}
+\begin{itemize}
+  \item Developed component responsible for detecting and publishing \textbf{microstructural}
+        signals to auto trader deployments
+  \item Designed standalone C++ engine, achieving full feed handling on a single
+        deployment via multithreading, replacing existing Java/C++ system, which
+        previously required sharding traffic across several deployments per exchange
+  \item Implemented backwards compatible test fixture to leverage existing component
+        test suite for our new implementation
+  \item Deployed to live trading production, working with traders to guarantee parity
+        with existing component
+\end{itemize}
 \subheading{Bloomberg L.P.}{New York, NY}{June -- August 2024}
-{Software Engineering Intern -- Enterprise Data, Index Core Data}{}
+{Software Engineer Intern -- Enterprise Data, Index Core Data}{}
 \begin{itemize}
   \item Designed and implemented dependency resolution and automated testing
         tool using \textbf{Python}, used by team of \textbf{80 engineers},
@@ -58,7 +70,7 @@
 
 \section{Projects}
 \subheading{Search Engine}{}{January - April 2025}
-{C++20, Networks, Distributed Systems}{}
+{C++, Networks, Distributed Systems}{}
 \begin{itemize}
   \item Implemented highly-compressed, on-disk reverse word index used to store
         \textbf{500M pages'} data at 3KB of data per page
@@ -92,19 +104,19 @@
   \item Wrote threading library in \textbf{C++}, supporting
         mutexes, condition variables, and scheduling on multi-CPU systems
 \end{itemize}
-\section{Competitions}
-\subheadingLine{University of Michigan Collegiate Poker Tournament}{}{October 2024}
-\begin{itemize}
-  \item Placed 4th of 108 students from universities across the country,
-        securing \$500 in prize money (played well, ran hot)
-\end{itemize}
-\subheadingLine{IMC Prosperity 2}{Python}{April 2024}
-\begin{itemize}
-  \item Utilized ETF arbitrage, pairs trading, game theory simulations, and
-        other strategies to place 53rd of 9,140 (\textbf{top 0.58\%})
-\end{itemize}
+% \section{Competitions}
+% \subheadingLine{University of Michigan Collegiate Poker Tournament}{}{October 2024}
+% \begin{itemize}
+%   \item Placed 4th of 108 students from universities across the country,
+%         securing \$500 in prize money
+% \end{itemize}
+% \subheadingLine{IMC Prosperity 2}{Python}{April 2024}
+% \begin{itemize}
+%   \item Utilized ETF arbitrage, pairs trading, game theory simulations, and
+%         other strategies to place 53rd of 9,140 (\textbf{top 0.58\%})
+% \end{itemize}
 \section{Technical Skills}
-\textbf{Languages}: C++, Python, Go, JavaScript/TypeScript, HTML/CSS, SQL,
+\textbf{Languages}: C++, C, Python, Go, JavaScript/TypeScript, HTML/CSS, SQL,
 \LaTeX \\
 \textbf{Tools}: Linux, Git, Docker, Jenkins, Django, React,
 PostgreSQL, MongoDB, Pandas, NumPy, (Neo)Vim, Tmux
